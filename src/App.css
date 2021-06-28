@@ -1,0 +1,28 @@
+@import '~antd/dist/antd.css';
+
+.choose-area{
+  width: 100%;
+  background-color: #eee;
+  border:2px solid #999; 
+  padding: 30px;
+}
+
+.choose-area .select-area{
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.choose-area .search-btn {
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.table-area{
+  width: 100%;
+}
+
+.table-area .ant-table-thead .ant-table-cell{
+  background: #eee;
+}

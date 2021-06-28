@@ -1,0 +1,50 @@
+{
+    "selectData": [
+        {
+            "id": 1,
+            "type": "product",
+            "title": "产品",
+            "options": [
+                {
+                    "val":"jibubao",
+                    "name":"计步宝"
+                },
+                {
+                    "val":"laidianxiuxiu",
+                    "name":"来电秀秀"
+                },
+                {
+                    "val":"datacenter",
+                    "name":"数据中心"
+                },
+                {
+                    "val":"weixin",
+                    "name":"微信"
+                },
+                {
+                    "val":"wangzherongyao",
+                    "name":"王者荣耀"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "type": "type",
+            "title": "类型",
+            "options": [
+                {
+                    "val":"software",
+                    "name":"软件"
+                },
+                {
+                    "val":"game",
+                    "name":"游戏"
+                },
+                {
+                    "val":"app",
+                    "name":"应用"
+                }
+            ]
+        }
+    ]
+}

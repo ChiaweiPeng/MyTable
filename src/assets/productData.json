@@ -1,0 +1,44 @@
+{
+    "productData":[
+        {
+            "key": 1,
+            "type": "software",
+            "product": "jibubao",
+            "name": "计步宝",
+            "belongType": "软件",
+            "defaultText": "Hello Ximles"
+        },
+        {
+            "key": 2,
+            "type": "game",
+            "product": "laidianxiuxiu",
+            "name": "来电秀秀",
+            "belongType": "游戏",
+            "defaultText": "Hello Ximles Ximles"
+        },
+        {
+            "key": 3,
+            "type": "app",
+            "product": "datacenter",
+            "name": "数据中心",
+            "belongType": "应用",
+            "defaultText": "Hello Ximles"
+        },
+        {
+            "key": 4,
+            "type": "software",
+            "product": "weixin",
+            "name": "微信",
+            "belongType": "软件",
+            "defaultText": "Hello Ximles"
+        },
+        {
+            "key": 5,
+            "type": "game",
+            "product": "wangzherongyao",
+            "name": "王者荣耀",
+            "belongType": "游戏",
+            "defaultText": "Hello Ximles Hello"
+        }
+    ]
+  }
