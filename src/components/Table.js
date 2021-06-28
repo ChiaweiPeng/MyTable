@@ -36,12 +36,6 @@ const tableHeaders = [
     }
 ]
 
-// function fetchTableData(data) {
-//     return new Promise((resolve) => {
-        
-//     } )
-// }
-
 class MyTable extends React.Component {
     constructor(props) {
         super(props);

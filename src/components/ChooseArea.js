@@ -14,13 +14,9 @@ class ChooseArea extends React.Component {
             type: ' ',
             prodName: ' ',
         }
-
-        this.handleSelect = this.handleSelect.bind(this)
-        this.handleNameChange = this.handleNameChange.bind(this)
-        this.handleButtonSearch = this.handleButtonSearch.bind(this)
     }
 
-    handleNameChange(val) {
+    handleNameChange = (val) => {
         if (val === "") {
             // TODO?: 为什么要设置一个空格？
             val = " "
@@ -30,7 +26,7 @@ class ChooseArea extends React.Component {
         })
     }
 
-    handleSelect(e, type) {
+    handleSelect = (e,type) => {
         if (type === 'product') {
             this.setState({
                 product: e
@@ -40,11 +36,10 @@ class ChooseArea extends React.Component {
         }
     }
 
-    handleButtonSearch(e) {
+    handleButtonSearch = (e) => {
         const searchData = this.state
         this.props.onHandleSearchBtn(e, searchData)
     }
-
 
     render() {
         return (

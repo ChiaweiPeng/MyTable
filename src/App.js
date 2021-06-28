@@ -16,7 +16,7 @@ class DemoTable extends React.Component {
     }
 
     // TODO: 改用ES6语法定义handleButtonSearch方法，避免使用bind绑定this（项目内其他方法定义也这么改）
-    this.handleButtonSearch = this.handleButtonSearch.bind(this)
+    // this.handleButtonSearch = this.handleButtonSearch.bind(this)
   }
 
   
@@ -34,11 +34,11 @@ class DemoTable extends React.Component {
 
   // TODO1: 改用async/await方式处理Promise结果
   // TODO2: 此区域代码是不是跟componentDidMount区域内的代码作用一样？能否提取成可复用的公用方法？
-  handleButtonSearch(e, searchData) {
+  handleButtonSearch = (e,searchData) => {
     return new Promise( (resolve) => {
       const newArr = getData(searchData)
       resolve(newArr)
-    }).then((newArr) => {
+    }).then( (newArr) => {
       this.setState({
         searchArr: newArr
       })

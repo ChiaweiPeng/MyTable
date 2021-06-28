@@ -6,20 +6,20 @@ const { Option } = Select
 class SelectBox extends React.Component {
     constructor(props) {
       super(props);
+
+      this.state = {}
   
-      // this.state = {
-      //   title: props.title,
-      //   options: props.options,
-      //   value: ''
-      // };
-  
-      this.handleSelect = this.handleSelect.bind(this)
     }
   
     // TODO?: event改名为value是否更符合语义？
-    handleSelect(event) {
+    // handleSelect(event) {
+    //   const type = this.props.type
+    //   this.props.onSelectChange(event,type)
+    // }
+
+    handleSelect = (val) => {
       const type = this.props.type
-      this.props.onSelectChange(event,type)
+      this.props.onSelectChange(val,type)
     }
   
     render() {
