@@ -25,24 +25,25 @@ class DemoTable extends React.Component {
 
     // TODO1: 改用async/await方式处理Promise结果
     // TODO2: 思考：如果接口报错，该怎么处理？
-    getData(isInit).then((initData) => {
-      this.setState({
-        searchArr:initData
-      })
-    })
+    this.fetchDataFromRemote(isInit)
   }
 
   // TODO1: 改用async/await方式处理Promise结果
   // TODO2: 此区域代码是不是跟componentDidMount区域内的代码作用一样？能否提取成可复用的公用方法？
-  handleButtonSearch = (e,searchData) => {
-    return new Promise( (resolve) => {
-      const newArr = getData(searchData)
-      resolve(newArr)
-    }).then( (newArr) => {
+   handleButtonSearch = (e,searchData) => {
+    this.fetchDataFromRemote(searchData)
+  }
+
+   // 抽取异步获取数据方法
+   fetchDataFromRemote = async(searchData) => {
+    try {
+      const data = await getData(searchData)
       this.setState({
-        searchArr: newArr
+        searchArr: data
       })
-    })
+    } catch (error) {
+      console.error(error)
+    }
   }
 
   render() {
