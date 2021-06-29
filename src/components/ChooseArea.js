@@ -10,16 +10,16 @@ class ChooseArea extends React.Component {
         super(props);
 
         this.state = {
-            product: ' ',
-            type: ' ',
-            prodName: ' ',
+            product: '',
+            type: '',
+            prodName: ''
         }
     }
 
     handleNameChange = (val) => {
         if (val === "") {
             // TODO?: 为什么要设置一个空格？
-            val = " "
+            val = ""
         }
         this.setState({
             prodName: val
@@ -38,6 +38,7 @@ class ChooseArea extends React.Component {
 
     handleButtonSearch = (e) => {
         const searchData = this.state
+        // console.log(searchData)
         this.props.onHandleSearchBtn(e, searchData)
     }
 

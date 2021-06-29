@@ -21,7 +21,7 @@ class DemoTable extends React.Component {
 
   
   componentDidMount() {
-    const isInit = 1
+    const isInit = {}
 
     // TODO1: 改用async/await方式处理Promise结果
     // TODO2: 思考：如果接口报错，该怎么处理？
@@ -47,8 +47,6 @@ class DemoTable extends React.Component {
   }
 
   render() {
-    // console.log(this.state.searchArr)
-    // const searchProps = this.state.searchArr.length === 0 ? productData : this.state.searchArr
     const searchProps = this.state.searchArr
     return (
       <Space className="demo-Table" direction="vertical" style={{ width: '100%' }}>
