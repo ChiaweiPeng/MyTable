@@ -29,7 +29,7 @@ class SelectBox extends React.Component {
       return (
         <Space className="select-box" size="large">
           <span className="select-title">{title}</span>
-          <Select style={{ width: 180 }} value={value} onChange={this.handleSelect} allowClear>
+          <Select mode="multiple" style={{ minWidth: 180 }} value={value} onChange={this.handleSelect} allowClear>
             {options.map(opt => <Option key={opt.val} value={opt.val}>{opt.name}</Option>)}
           </Select>
         </Space>

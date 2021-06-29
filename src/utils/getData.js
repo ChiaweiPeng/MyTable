@@ -5,16 +5,30 @@ function getData(searchData) {
     let arr = []
     return new Promise((resolve) => {
         if (JSON.stringify(searchData) === '{}') {
+            // 初始化加载时
             arr = productData
         } else {
-            // TODO1: 查阅 MDN 文档: Array.includes / String.includes语法，在此场景下代替indexOf方法
-            // TODO2: 查阅 MDN 文档: Array.filter语法，代替let arr = [] + arr.forEach + arr.push的写法
-            for(let val in searchData) {
-                if(searchData[val] === undefined || searchData[val].length === 0) {
+            for (let val in searchData) {
+                let myData = searchData[val]
+                if (myData === undefined || myData.length === 0) {
+                    // 选择框或者输入框为空跳出循环
                     continue
+                } else if (myData.length > 1) {
+                    // 多选情况
+                    if (typeof myData === 'string') {
+                        // 由于传进来的prodName是一个string，要包成一个数组值才能参与循环
+                        myData = [myData]
+                    }
+                    myData.forEach(opts => {
+                        productData.forEach(item => {
+                            if (item.product.includes(opts) || item.type.includes(opts) || item.name.includes(opts)) {
+                                arr.push(item)
+                            }
+                        })
+                    })
                 } else {
                     arr = productData.filter(item => {
-                        return item.product.includes(searchData[val]) || item.type.includes(searchData[val]) || item.name.includes(searchData[val])
+                        return item.product.includes(myData) || item.type.includes(myData) || item.name.includes(myData)
                     })
                 }
             }

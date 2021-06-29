@@ -38,9 +38,8 @@ class ChooseArea extends React.Component {
 
     handleButtonSearch = (e) => {
         const searchData = this.state
-        // console.log(searchData)
         this.props.onHandleSearchBtn(e, searchData)
-    }
+    } 
 
     render() {
         return (
