@@ -3,7 +3,6 @@ import { message } from 'antd';
 
 function getData(searchData) {
     let arr = []
-    console.log(products,types)
     return new Promise((resolve) => {
         if (JSON.stringify(searchData) === '{}') {
             arr = productData
