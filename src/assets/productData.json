@@ -2,43 +2,24 @@
     "productData":[
         {
             "key": 1,
-            "type": "software",
-            "product": "jibubao",
-            "name": "计步宝",
-            "belongType": "软件",
-            "defaultText": "Hello Ximles"
+            "type": "软件，游戏",
+            "product": "计步宝，来电秀秀",
+            "username": "彭佳伟",
+            "textdesc": "Hello Ximles"
         },
         {
             "key": 2,
-            "type": "game",
-            "product": "laidianxiuxiu",
-            "name": "来电秀秀",
-            "belongType": "游戏",
-            "defaultText": "Hello Ximles Ximles"
+            "type": "应用，软件",
+            "product": "数据中心，微信",
+            "username": "黄沛",
+            "textdesc": "Hello Ximles Ximles"
         },
         {
             "key": 3,
-            "type": "app",
-            "product": "datacenter",
-            "name": "数据中心",
-            "belongType": "应用",
-            "defaultText": "Hello Ximles"
-        },
-        {
-            "key": 4,
-            "type": "software",
-            "product": "weixin",
-            "name": "微信",
-            "belongType": "软件",
-            "defaultText": "Hello Ximles"
-        },
-        {
-            "key": 5,
-            "type": "game",
-            "product": "wangzherongyao",
-            "name": "王者荣耀",
-            "belongType": "游戏",
-            "defaultText": "Hello Ximles Hello"
+            "type": "游戏，软件",
+            "product": "王者荣耀，计步宝",
+            "username": "马老师",
+            "textdesc": "Hello Ximles"
         }
     ]
   }

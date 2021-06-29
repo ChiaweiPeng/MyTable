@@ -1,40 +1,9 @@
 import React from 'react'
 import { Table, Space } from 'antd'
 
-const { Column } = Table
+import {tableHeaders} from '../assets/tableHeaders.json'
 
-const tableHeaders = [
-    {
-        key: 'index',
-        dataIndex: 'key',
-        title: '序号',
-    },
-    {
-        key: 'type',
-        dataIndex: 'type',
-        title: '类型'
-    },
-    {
-        key: 'product',
-        dataIndex: 'product',
-        title: '产品'
-    },
-    {
-        key: 'name',
-        dataIndex: 'name',
-        title: '名称'
-    },
-    {
-        key: 'belongType',
-        dataIndex: 'belongType',
-        title: '所属分类'
-    },
-    {
-        key: 'defaultText',
-        dataIndex: 'defaultText',
-        title: '默认文案'
-    }
-]
+const { Column } = Table
 
 class MyTable extends React.Component {
     constructor(props) {
@@ -44,7 +13,7 @@ class MyTable extends React.Component {
             searchData: this.props.searchData
         }
     }
-    
+
     componentDidMount() {
     }
 

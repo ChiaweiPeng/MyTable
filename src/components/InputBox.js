@@ -25,7 +25,7 @@ class InputBox extends React.Component {
       const ProdName = this.props.ProdName
       return (
         <Space className="input-box" direction="horizontal" size="large">
-          <span className="input-title">名称</span>
+          <span className="input-title">账号名称</span>
           <Search style={{ width: 200 }} value={ProdName} onSearch={this.handleSearch} onChange={this.handleSearchChange}></Search>
         </Space>
       )

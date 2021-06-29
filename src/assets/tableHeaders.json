@@ -16,19 +16,19 @@
             "title": "产品"
         },
         {
-            "key": "name",
-            "dataIndex": "name",
-            "title": "名称"
+            "key": "username",
+            "dataIndex": "username",
+            "title": "账号名称"
         },
         {
-            "key": "belongType",
-            "dataIndex": "belongType",
-            "title": "所属分类"
+            "key": "textdesc",
+            "dataIndex": "textdesc",
+            "title": "文案说明"
         },
         {
-            "key": "defaultText",
-            "dataIndex": "defaultText",
-            "title": "默认文案"
+            "key": "operation",
+            "dataIndex": "operation",
+            "title": "操作"
         }
     ]
 }
