@@ -3,21 +3,21 @@
         {
             "key": 1,
             "type": "软件，游戏",
-            "product": "计步宝，来电秀秀",
+            "product": "计步宝",
             "username": "彭佳伟",
             "textdesc": "Hello Ximles"
         },
         {
             "key": 2,
             "type": "应用，软件",
-            "product": "数据中心，微信",
+            "product": "数据中心",
             "username": "黄沛",
             "textdesc": "Hello Ximles Ximles"
         },
         {
             "key": 3,
             "type": "游戏，软件",
-            "product": "王者荣耀，计步宝",
+            "product": "王者荣耀",
             "username": "马老师",
             "textdesc": "Hello Ximles"
         }
