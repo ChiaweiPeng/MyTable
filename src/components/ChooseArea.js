@@ -41,6 +41,10 @@ class ChooseArea extends React.Component {
         this.props.onHandleSearchBtn(e, searchData)
     } 
 
+    handleButtonAdd = (e) => {
+        this.props.onHandleAddBtn(e)
+    }
+
     render() {
         return (
             <Space className="choose-area" direction="vertical" size="large">
@@ -57,6 +61,7 @@ class ChooseArea extends React.Component {
 
                 <Space className="search-btn">
                     <Button style={{ width: 120 }} onClick={this.handleButtonSearch}>查询</Button>
+                    <Button style={{ width: 120 }} onClick={this.handleButtonAdd}>新增</Button>
                 </Space>
             </Space>
         )

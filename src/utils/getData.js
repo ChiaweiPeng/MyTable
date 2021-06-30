@@ -18,11 +18,11 @@ function getData(searchData) {
                         myData = [myData]
                     }
                     myData.forEach(opts => {
-                        console.log(opts)
                         productData.forEach(item => {
-                            console.log(item.product) 
                             if (item.product.includes(opts) || item.type.includes(opts) || item.username.includes(opts)) {
-                                arr.push(item)
+                                if(arr.indexOf(item) === -1) {
+                                    arr.push(item)
+                                }
                             }
                         })
                     })

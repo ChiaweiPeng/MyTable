@@ -4,6 +4,7 @@ import './App.css';
 
 import MyTable from './components/Table';
 import ChooseArea from './components/ChooseArea';
+import AddForm from './components/AddForm';
 // import { productData } from './assets/productData.json'
 import getData from './utils/getData';
 
@@ -12,7 +13,8 @@ class DemoTable extends React.Component {
     super(props);
 
     this.state = {
-      searchArr: []
+      searchArr: [],
+      showForm:false
     }
 
     // TODO: 改用ES6语法定义handleButtonSearch方法，避免使用bind绑定this（项目内其他方法定义也这么改）
@@ -34,6 +36,12 @@ class DemoTable extends React.Component {
     this.fetchDataFromRemote(searchData)
   }
 
+  handleAddBtn = (e) => {
+    this.setState({
+      showForm : !this.state.showForm
+    })
+  }
+
    // 抽取异步获取数据方法
    fetchDataFromRemote = async(searchData) => {
     try {
@@ -50,8 +58,9 @@ class DemoTable extends React.Component {
     const searchProps = this.state.searchArr
     return (
       <Space className="demo-Table" direction="vertical" style={{ width: '100%' }}>
-        <ChooseArea onHandleSearchBtn={this.handleButtonSearch} />
+        <ChooseArea onHandleSearchBtn={this.handleButtonSearch} onHandleAddBtn={this.handleAddBtn} />
         <MyTable searchData={searchProps} />
+        <AddForm showForm={this.state.showForm}  onHandleAddCancel={this.handleAddBtn}/>
       </Space>
     )
   }
